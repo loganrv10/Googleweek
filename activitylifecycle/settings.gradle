@@ -1,0 +1,2 @@
+rootProject.name = "activity life cycle"
+include ':app'

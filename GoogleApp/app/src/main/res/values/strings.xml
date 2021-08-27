@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Google App</string>
+    <string name="default_web_client_id">1</string>
+</resources>

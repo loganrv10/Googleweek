@@ -1,0 +1,2 @@
+rootProject.name = "My Async assign recycleView"
+include ':app'
