@@ -49,25 +49,7 @@
             android:layout_height="match_parent"
      />
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Marvels"
-                    android:id="@+id/tv3"
-                    android:textSize="29sp"
-                    android:layout_below="@+id/recycleViewMeet"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginBottom="20dp"
-                    android:textStyle="bold"
-                    android:textColor="@color/black"/>
-
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/recycleViewMeet3"
-                    android:layout_width="match_parent"
-                    android:layout_below="@+id/tvI"
-                    android:layout_height="match_parent"
-                    />
         </LinearLayout>
+
 
 </ScrollView>

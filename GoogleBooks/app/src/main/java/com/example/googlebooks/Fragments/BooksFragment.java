@@ -25,7 +25,7 @@ public class BooksFragment extends Fragment implements ItemClickListener{
 
     RecyclerView mRecyclerView;
     RecyclerView mRecycleViewMeet2;
-    RecyclerView mRecycleViewMeet3;
+
     ArrayList<BookInfo> bookList = new ArrayList<>();
 
 
@@ -35,7 +35,7 @@ public class BooksFragment extends Fragment implements ItemClickListener{
         View view = inflater.inflate(R.layout.fragment_meet, container, false);
         mRecyclerView = view.findViewById(R.id.recycleViewMeet);
         mRecycleViewMeet2 = view.findViewById(R.id.recycleViewMeet2);
-        mRecycleViewMeet3 = view.findViewById(R.id.recycleViewMeet3);
+
         setRecycleView();
         setRecycleView2();
         setRecycleView3();
@@ -68,9 +68,10 @@ public class BooksFragment extends Fragment implements ItemClickListener{
         }
 
         BookAdapter bookAdapter = new BookAdapter(bookList,this);
-     GridLayoutManager gridLayoutManager = new GridLayoutManager(this.getContext(),2);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this.getContext(),
+                RecyclerView.HORIZONTAL, false);
         mRecycleViewMeet2.setAdapter(bookAdapter);
-        mRecycleViewMeet2.setLayoutManager(gridLayoutManager );
+        mRecycleViewMeet2.setLayoutManager(linearLayoutManager);
 
     }
 
